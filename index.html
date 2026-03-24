@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Public API Playground</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<h1>Public API Playground</h1>
+
+<div class="container">
+
+<!-- Dog Finder -->
+<div class="card">
+<h2>🐶 Dog Finder</h2>
+<button onclick="getDog()">Get Dog</button>
+<img id="dogImg"/>
+<p id="breed"></p>
+<button onclick="copyDog()">Copy Image URL</button>
+</div>
+
+<!-- Joke Generator -->
+<div class="card">
+<h2>😂 Joke Generator</h2>
+<button onclick="getJoke()">Get Joke</button>
+<p id="setup"></p>
+<p id="punchline"></p>
+</div>
+
+<!-- Random User -->
+<div class="card">
+<h2>👤 Random User</h2>
+<button onclick="getUser()">Get User</button>
+<img id="userImg"/>
+<p id="name"></p>
+<p id="email"></p>
+<p id="country"></p>
+</div>
+
+<!-- JSON Placeholder -->
+<div class="card">
+<h2>📝 Posts</h2>
+<button onclick="getPosts()">Get Posts</button>
+<div id="posts"></div>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
