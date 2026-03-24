@@ -59,3 +59,24 @@ posts.innerHTML += `
 })
 
 }
+function loading(id){
+document.getElementById(id).innerText="Loading..."
+}
+async function getDog(){
+
+document.getElementById("breed").innerHTML =
+'<div class="loading"></div>'
+
+let res = await fetch(
+"https://dog.ceo/api/breeds/image/random"
+)
+
+let data = await res.json()
+
+document.getElementById("dogImg").src = data.message
+
+let breed = data.message.split("/")[4]
+
+document.getElementById("breed").innerText = breed
+
+}
